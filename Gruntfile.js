@@ -81,10 +81,10 @@ module.exports = function(grunt) {
             target: {
                 files: [{
                     expand: true,
-                    cwd: 'output',
+                    cwd: 'html/css/',
                     src: ['*.css', '!*.min.css'],
-                    dest: 'output',
-                    //ext: '.min.css'
+                    dest: 'html/css/',
+                    ext: '.min.css'
                 }]
             }
         },
@@ -118,7 +118,7 @@ module.exports = function(grunt) {
                         expand: true, 
                         flatten: true,
                         src: ['html/css/mip_global_grid.css'], 
-                        dest: 'output/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                        dest: 'html/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                         filter: 'isFile'
                     },
                 ],
@@ -130,7 +130,7 @@ module.exports = function(grunt) {
                         expand: true, 
                         flatten: true,
                         src: ['html/css/mip_brand_style.css'], 
-                        dest: 'output/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                        dest: 'html/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                         filter: 'isFile'
                     },
                 ],
@@ -141,7 +141,7 @@ module.exports = function(grunt) {
         /* REPLACE NEW VERSION ON STAGING WITH UPDATED URL VERSION SO THAT IMAGES AND FONTS WILL WORK*/
         replace: {
             mipglobal: {
-                src: ['output/mip_global_grid.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                src: ['html/css/mip_global_grid.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                 overwrite: true, // overwrite matched source files 
                 replacements: [{
                     from: '../fonts/',
@@ -149,11 +149,11 @@ module.exports = function(grunt) {
                 }]
             },
             glpbrand: {
-                src: ['output/mip_brand_style.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                src: ['html/css/mip_brand_style.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
                 overwrite: true, // overwrite matched source files 
                 replacements: [{
                     from: '../fonts/custom_font/',
-                    to: "/fonts/globallandingpagesv2/brand/bellerbys/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
+                    to: "/fonts/globallandingpagesv2/brand/__________ADD_BRAND_FONT_FOLDER_NAME_HERE__________/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
                 }]
             }
         }
