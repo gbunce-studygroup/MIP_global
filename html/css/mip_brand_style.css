@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'font_regular';
-  src: url("../fonts/custom_font/FSSilasSansWeb-Light.eot");
-  src: url("../fonts/custom_font/FSSilasSansWeb-Light.eot#iefix") format("embedded-opentype"), url("../fonts/custom_font/FSSilasSansWeb-Light.woff") format("woff");
+  src: url("../fonts/custom_font/________FONT_FILE________");
+  src: url("../fonts/custom_font/________FONT_FILE________#iefix") format("embedded-opentype"), url("../fonts/custom_font/________FONT_FILE________") format("woff");
 }
 @font-face {
-  font-family: 'font_bold';
-  src: url("../fonts/custom_font/FSSilasSansWeb-Regular.eot");
-  src: url("../fonts/custom_font/FSSilasSansWeb-Regular.eot#iefix") format("embedded-opentype"), url("../fonts/custom_font/FSSilasSansWeb-Regular.woff") format("woff");
+  font-family: 'font_regular';
+  src: url("../fonts/custom_font/________FONT_FILE________");
+  src: url("../fonts/custom_font/________FONT_FILE________#iefix") format("embedded-opentype"), url("../fonts/custom_font/________FONT_FILE________") format("woff");
 }
 body {
   font-size: 16px;
