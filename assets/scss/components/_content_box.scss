@@ -1,0 +1,8 @@
+// content box
+.content_box{
+    @include component_margin;
+    @include content_text_styles;
+    img{
+        @include component_margin;
+    }
+}

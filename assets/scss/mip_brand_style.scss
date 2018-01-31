@@ -1,0 +1,126 @@
+@import "mip_variables";
+
+@font-face{
+    font-family: 'font_regular';
+    src: url('../fonts/custom_font/FSSilasSansWeb-Light.eot');
+    src: url('../fonts/custom_font/FSSilasSansWeb-Light.eot#iefix') format('embedded-opentype'),
+         url('../fonts/custom_font/FSSilasSansWeb-Light.woff') format('woff');
+}
+
+@font-face{
+    font-family: 'font_bold';
+    src: url('../fonts/custom_font/FSSilasSansWeb-Regular.eot');
+    src: url('../fonts/custom_font/FSSilasSansWeb-Regular.eot#iefix') format('embedded-opentype'),
+         url('../fonts/custom_font/FSSilasSansWeb-Regular.woff') format('woff');
+}
+
+body{
+    font-size: 16px;
+    line-height: 26px;
+    color: $main_text_colour;
+    font-family: 'font_regular';
+}
+
+strong, b, h1, h2, h3, h4, h5, h6{
+    font-family: 'font_bold';
+    font-weight: normal;
+}
+
+// button group
+.button-group{
+    header &{
+        background: $cta_background_colour;
+    }
+    ul{
+        li{
+            a{
+                background: $cta_colour;
+                color: $cta_text_colour;
+                border-radius: $cta_border-radius;
+                &:hover, &:focus, &:active{
+                    background: lighten($cta_colour, 12%);
+                }
+            }
+        }
+    }
+}
+
+
+// header
+header{
+    background: $header_background_colour;
+    // logo
+    .logo{
+        margin: $logo_margin;
+        a{
+            img{
+                width: $logo_width !important;
+            }
+        }
+    }    
+}
+
+
+// page sections
+.section{
+    &.two{
+        background: $section_two_bg_colour;
+    }
+}
+
+
+// content box
+.content_box{
+    h1, h2, h3, h4, h5, h6{
+        color: $main_brand_colour;
+    }
+    a{
+        color: $main_brand_colour;
+        &:hover, &:active, &:focus{
+            color: lighten($main_brand_colour, 12%);
+        }
+    }
+}
+
+
+// widget
+.widget{
+    background: $widget_background_colour;
+    color: $widget_text_colour;
+    h1, h2, h3, h4, h5, h6{
+        color: $main_brand_colour;
+    }
+    .button{
+        a{
+            background: $widget_cta_colour;
+            color: $widget_cta_text_colour;
+        }
+    }
+}
+
+
+// footer
+footer{
+    text-align: center;
+    background: $footer_background_colour; 
+    .footer_links{ //ul
+        li{
+            a{
+                color: $footer_text_colour;
+            }
+        }
+    }
+    // social media
+    .social_media_wrapper{
+        h1, h2, h3, h4, h5, h6, p{
+            color: $footer_text_colour;
+        }
+        .social_media{ //ul
+            li{
+                a{
+                    color: $social_media_colour;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+<!-- WIDGET COMPONENT START -->
+<div class="widget {{ className }}">
+    {% if title == blank %}
+        {{ title }}
+    {% else %}
+        <h3>{{ title }}</h3> <!-- Option for content editors to choose heading tag -->
+    {% endif %}
+    {% if image_size == blank %}
+        {{ image_size }}
+    {% else %}
+        <mip-img src="http://placehold.it/{{ image_size }}"></mip-img>
+    {% endif %}
+    {% if content %}
+        {{ content }}
+    {% endif %}
+    {% if button == blank %}
+        {{ button }}
+    {% else %}
+        <div class="button">
+            <a href="#">{{ button }}</a>
+        </div>
+    {% endif %}
+</div>
+<!-- WIDGET COMPONENT END -->

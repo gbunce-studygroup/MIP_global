@@ -1,0 +1,56 @@
+// component margin var - controls lots component margins & paddings
+$component_margin: 0 0 10px 0 !default;
+
+// COMPONENT MARGIN
+@mixin component_margin{
+    margin: 0 0 (nth($component_margin, 3) * 1.5) 0;
+}
+
+// SECTION STYLES
+@mixin section_styles{
+    margin: 0 auto;
+    padding: 0 7px;
+}
+
+@mixin h_tag_styles{
+    h1{
+        font-size: 26px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 22px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+    h5{
+        font-size: 18px;
+    }
+
+    h6{
+        font-size: 16px;
+    }
+}
+
+// CONTENT BOX, TABS, ACCORDION & BLOG ARTICLE TEXT STYLES
+@mixin content_text_styles{
+    h1, h2, h3, h4, h5, h6{
+        margin: 0 0 (nth($component_margin, 3)) 0;
+    }
+
+    @include h_tag_styles;
+
+    p, ul, ol{
+        margin-bottom: (nth($component_margin, 3));
+    }
+
+    ul, ol{
+        margin-left: 15px;
+    }
+}

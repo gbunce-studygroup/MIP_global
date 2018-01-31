@@ -1,0 +1,30 @@
+.button-group{
+    @include component_margin;
+    header &{
+        position: fixed;
+        top: 0;
+        left: 0; 
+        right: 0;
+        z-index: 1;
+        margin: 0;
+        padding: 10px 15px;
+    }
+    ul{
+        display: table;
+        width: 100%;
+        li{
+            display: table-cell;
+            a{
+                margin: 0 15px 0 0;
+                display: block;
+                text-align: center;
+                padding: 10px 15px;
+            }
+            &:last-child{
+                a{
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

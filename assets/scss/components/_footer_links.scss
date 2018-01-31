@@ -1,0 +1,12 @@
+.footer_links{ //ul
+	margin-bottom: (nth($component_margin, 3) / 1.5);
+    li{
+        display: inline;
+        margin: 0 (nth($component_margin, 3) / 2);
+        a{
+            &:hover, &:focus, &:active{
+            	text-decoration: underline;
+            }
+        }
+    }
+}

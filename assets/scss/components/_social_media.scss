@@ -1,0 +1,18 @@
+.social_media_wrapper{
+    h1, h2, h3, h4, h5, h6, p{
+        font-size: 14px;
+    }
+    .social_media{ //ul
+        li{
+            display: inline-block;
+            font-size: 20px;
+            a{
+                padding: (nth($component_margin, 3));               
+                display: block;
+                &:hover, &:focus, &:active{
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

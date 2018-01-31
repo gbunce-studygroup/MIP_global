@@ -1,0 +1,110 @@
+@import "font-awesome";
+@import "mip_mixins";
+
+body{
+	font-size: 16px;
+	line-height: 26px;
+	margin: 0;
+	margin-top: 66px;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	&:before, &:after{
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+}
+
+#pageBody{
+	//margin-top: 66px;
+}
+
+// basic bootstrap grid (only 12 & 6 column available)
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 100%;
+	&:before, &:after{
+	    content: " ";
+	    display: table;
+	    clear: left;
+	}
+    &:after{
+    	clear: both;
+    }
+	.row{
+	    margin-left: -7px;
+	    margin-right: -7px;
+		&:after{
+		    clear: both;
+		}
+		&:before, &:after{
+		    content: " ";
+		    display: table;
+		}
+	    [class*='col-']{
+			position: relative;
+			min-height: 1px;
+			padding-left: 7px;
+			padding-right: 7px;
+	    }
+		.col-md-6{
+			float: left;
+			width: 50%;
+		}
+		.col-md-12{
+			float: left;
+			width: 100%;
+
+		}
+	}
+}
+
+// Utility classes
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-center{text-align: center;}
+.text-justify{text-align: justify;}
+.text-nowrap{white-space: nowrap;}
+
+@include h_tag_styles;
+
+// page sections
+header{
+	display: block;
+	@include component_margin;
+}
+
+.section{
+	@include section_styles;
+	&.one{}
+	&.two{
+		.container{
+			.row{
+				[class*='col-']{
+					div:first-child{
+						margin-top: (nth($component_margin, 3));
+					}
+				}
+			}
+		}
+		.widget{
+			background: #fff;
+		}
+	}
+	&.three{}
+}
+
+footer{
+	display: block;
+	text-align: center;
+	padding: (nth($component_margin, 3));
+}
+
+@import "components"; // mip components

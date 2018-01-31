@@ -1,0 +1,20 @@
+.widget{
+    @include component_margin;
+    padding: (nth($component_margin, 3));
+    h1, h2, h3, h4, h5, h6{
+        @include component_margin;
+    }
+    img{
+        @include component_margin;
+    }
+    .button{
+        margin: (nth($component_margin, 3)) 0 0 0;
+        a{
+            display: inline-block;
+            padding: 5px 10px;
+            &:hover, &:focus, &:active{
+                opacity: 0.8;
+            }
+        }
+    }
+}
