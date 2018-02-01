@@ -1,0 +1,1 @@
+Add brand fonts to this directory and link to the ones used for v2 landing pages
