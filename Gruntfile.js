@@ -128,11 +128,11 @@ module.exports = function(grunt) {
         /* REPLACE NEW VERSION ON STAGING WITH UPDATED URL VERSION SO THAT IMAGES AND FONTS WILL WORK*/
         replace: {
             mipglobal: {
-                src: ['html/css/mip_global_grid.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
+                src: ['html/css/mip_global_grid.css'],
                 overwrite: true, // overwrite matched source files 
                 replacements: [{
-                    from: '../fonts/',
-                    to: "/fonts/globallandingpagesv2/global/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
+                    from: '../fonts/chinese_icons/',
+                    to: "/fonts/globallandingpagesv2/global/chinese_icons/"
                 }]
             }
         }
