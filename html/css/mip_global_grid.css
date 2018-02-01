@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'chinese_icons';
-  src: url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.eot?yocg7c");
-  src: url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.eot?yocg7c#iefix") format("embedded-opentype"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.ttf?yocg7c") format("truetype"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.woff?yocg7c") format("woff"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.svg?yocg7c#chinese_icon_font") format("svg");
+  src: url("../fonts/chinese_icons/chinese_icon_font.eot?yocg7c");
+  src: url("../fonts/chinese_icons/chinese_icon_font.eot?yocg7c#iefix") format("embedded-opentype"), url("../fonts/chinese_icons/chinese_icon_font.ttf?yocg7c") format("truetype"), url("../fonts/chinese_icons/chinese_icon_font.woff?yocg7c") format("woff"), url("../fonts/chinese_icons/chinese_icon_font.svg?yocg7c#chinese_icon_font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
