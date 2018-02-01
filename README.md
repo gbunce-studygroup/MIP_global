@@ -1,8 +1,8 @@
 # Mobile Instant Pages Framework (Global)
 
-#### Frontend framework based on the university website framework for creating branded themes for Mobile Instant Pages (MIP) landing pages.
+#### Front-end framework based on the university website framework for creating branded themes for Mobile Instant Pages (MIP) landing pages.
 
-This is the global version and should ONLY be used to compile changes to the `mip_global_grid.css / mip_global_grid.min.css` stylesheets in order to make changes/fixes to all MIP landing pages.
+This is the global version and is only for compiling changes to `mip_global_grid.css / mip_global_grid.min.css` stylesheets in order to make changes/fixes to all MIP landing pages.
 
 The task for compiling the global css is `grunt mipglobal`. 
 
