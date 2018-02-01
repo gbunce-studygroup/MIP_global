@@ -13,7 +13,6 @@ module.exports = function(grunt) {
                     sourcemap: 'none',
                 },
                 files: {
-                    'html/css/mip_brand_style.css':'assets/scss/mip_brand_style.scss',
                     'html/css/mip_global_grid.css':'assets/scss/mip_global_grid.scss'
                 }
             }
@@ -123,18 +122,6 @@ module.exports = function(grunt) {
                     },
                 ],
             },
-            brand: {
-                files: [
-                    // includes files within path
-                    {
-                        expand: true, 
-                        flatten: true,
-                        src: ['html/css/mip_brand_style.css'], 
-                        dest: 'html/css/', // CHANGE TO MATCH THE CSS LOCATION ON STAGING
-                        filter: 'isFile'
-                    },
-                ],
-            },
         },
         
 
@@ -146,14 +133,6 @@ module.exports = function(grunt) {
                 replacements: [{
                     from: '../fonts/',
                     to: "/fonts/globallandingpagesv2/global/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
-                }]
-            },
-            glpbrand: {
-                src: ['html/css/mip_brand_style.css'], // CHANGE TO MATCH THE CSS LOCATION ON STAGING
-                overwrite: true, // overwrite matched source files 
-                replacements: [{
-                    from: '../fonts/custom_font/',
-                    to: "/fonts/globallandingpagesv2/brand/__________ADD_BRAND_FONT_FOLDER_NAME_HERE__________/" // CHANGE TO MATCH THE FONTS LOCATION ON STAGING
                 }]
             }
         }
@@ -179,5 +158,4 @@ module.exports = function(grunt) {
 	grunt.registerTask('minify',['cssmin']);
 
     grunt.registerTask('mipglobal',['sass', 'autoprefixer', 'copy:main', 'replace:mipglobal', 'cssmin']);
-    grunt.registerTask('mipbrand',['sass', 'autoprefixer', 'copy:brand', 'replace:glpbrand', 'cssmin']);
 }
