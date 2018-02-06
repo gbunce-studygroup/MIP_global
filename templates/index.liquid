@@ -8,11 +8,8 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="content_box">
-                        <mip-img src="http://placehold.it/240x110" class="responsive" border="0"></mip-img>
-                        <h1>Lorem ipsum</h1>
-                        <p>Html input via a rich text editor, H1 H2 H3 H4 H5 H6, paragraphs, lists, tables, iframes ect. Html input via a rich text editor, H1 H2 H3 H4 H5 H6, paragraphs, lists, tables, iframes ect. Html input via a rich text editor, H1 H2 H3 H4 H5 H6, paragraphs, lists, tables, iframes ect.</p>
-                    </div>
+                    {% include "components/image_box" %}
+                    {% include "components/content_box" %}
                 </div>
             </div>            
 
@@ -43,15 +40,6 @@
             <div class="row">
                 <div class="col-md-12">
                     {% include "components/content_box" %}
-
-                    {% include 'components/widget'%}
-                        {% assign className = '' %}
-                        {% assign title = 'Widget' %}
-                        {% assign image_size = '760x450' %}
-                        {% assign content = '<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>' %}
-                        {% assign button = 'Learn more' %}
-
-                    {% include 'components/button_group'%}
                 </div>
             </div>
         </div>
