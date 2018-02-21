@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'chinese_icons';
-  src: url("../fonts/chinese_icons/chinese_icon_font.eot?yocg7c");
-  src: url("../fonts/chinese_icons/chinese_icon_font.eot?yocg7c#iefix") format("embedded-opentype"), url("../fonts/chinese_icons/chinese_icon_font.ttf?yocg7c") format("truetype"), url("../fonts/chinese_icons/chinese_icon_font.woff?yocg7c") format("woff"), url("../fonts/chinese_icons/chinese_icon_font.svg?yocg7c#chinese_icon_font") format("svg");
+  src: url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.eot?yocg7c");
+  src: url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.eot?yocg7c#iefix") format("embedded-opentype"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.ttf?yocg7c") format("truetype"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.woff?yocg7c") format("woff"), url("/fonts/globallandingpagesv2/global/chinese_icons/chinese_icon_font.svg?yocg7c#chinese_icon_font") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,6 @@ body {
   font-size: 16px;
   line-height: 26px;
   margin: 0;
-  margin-top: 66px;
 }
 
 * {
@@ -139,6 +138,7 @@ h6 {
 header {
   display: block;
   margin: 0 0 15px 0;
+  padding: 8.5px 0 0 0;
 }
 
 .section {
@@ -162,13 +162,7 @@ footer {
   margin: 0 0 15px 0;
 }
 header .button-group {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  margin: 0;
-  padding: 10px 15px;
+  padding: 8.5px 0 0 0;
 }
 .button-group ul {
   display: table;
